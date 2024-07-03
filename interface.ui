@@ -465,7 +465,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="minimizeBtn">
                <property name="text">
                 <string/>
                </property>
@@ -482,13 +482,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
               </widget>
              </item>
              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-              <widget class="QPushButton" name="pushButton_2">
+              <widget class="QPushButton" name="normalBtn">
                <property name="text">
                 <string/>
                </property>
                <property name="icon">
                 <iconset resource="../Practice/Sandunika/Resources.qrc">
-                 <normaloff>:/icons/Icons2/minimize-2.svg</normaloff>:/icons/Icons2/minimize-2.svg</iconset>
+                 <normaloff>:/icons/Icons2/maximize.svg</normaloff>:/icons/Icons2/maximize.svg</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -499,7 +499,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
               </widget>
              </item>
              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-              <widget class="QPushButton" name="pushButton_3">
+              <widget class="QPushButton" name="closeBtn">
                <property name="text">
                 <string/>
                </property>

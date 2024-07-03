@@ -2,32 +2,24 @@
 	"QMainWindow":[
 		{
 			"tittle":"Motion Pilot",
-			"icon":":/icons/icons/github.svg",
+			"icon":"logo.png",
 			"frameless": true,
 			"transluscentBg": true,
-			"sizeGrip": "size_grip",
-			"shadow":[
-				{
-					"color": "#fff",
-					"blurRadius": 20,
-					"xOffset": 0,
-					"yOffset": 0,
-					"centralWidget": "centralwidget"
-				}
-			],
+			"sizeGrip": "sizeGrip",
+
 			"navigation":[
 				{
-					"minimize":"minimize_window_button",
-					"close": "close_window_button",
+					"minimize":"minimizeBtn",
+					"close": "closeBtn",
 					"restore":[
 						{
-							"buttonName": "restore_window_button",
-							"normalIcon": ":/icons/icons/maximize-2.svg",
-							"maximizedIcon": ":/icons/icons/minimize-2.svg"
+							"buttonName": "restoreBtn",
+							"normalIcon": ":/icons/Icons2/maximize.svg",
+							"maximizedIcon": ":/icons/Icons2/copy.svg"
 						}
 					],
-					"moveWindow": "header_frame",
-					"tittleBar": "header_frame"
+					"moveWindow": "titleContainer",
+					"tittleBar": "titleContainer"
 				}
 			]
 		}
