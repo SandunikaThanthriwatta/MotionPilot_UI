@@ -288,4 +288,7 @@
     <file>Icons2/zoom-in.svg</file>
     <file>Icons2/zoom-out.svg</file>
   </qresource>
+  <qresource prefix="images">
+    <file>Icons2/images/Logofyp.png</file>
+  </qresource>
 </RCC>
