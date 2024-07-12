@@ -289,6 +289,47 @@
     <file>Icons2/zoom-out.svg</file>
   </qresource>
   <qresource prefix="images">
+    <file>Icons2/images/Windows-Logo-noback.png</file>
+    <file>Icons2/10 hand gestures editted/9.png</file>
+    <file>Icons2/images/vlcnoback2.png</file>
+    <file>Icons2/images/coom-no back.png</file>
+    <file>Icons2/images/microsoft edge no back.png</file>
+    <file>Icons2/images/ppnoback.png</file>
+    <file>Icons2/images/utubenoback.png</file>
+    <file>Icons2/images/vlc-nobackg.webp</file>
+    <file>Icons2/images/iutubelogo.jfif</file>
+    <file>Icons2/images/automode2new.PNG</file>
+    <file>Icons2/images/applicationsgrid.PNG</file>
+    <file>Icons2/images/1720.jpg</file>
+    <file>Icons2/images/1720.png</file>
+    <file>Icons2/images/1753.png</file>
+    <file>Icons2/images/1798.png</file>
+    <file>Icons2/images/1821.png</file>
+    <file>Icons2/images/2073.png</file>
+    <file>Icons2/images/2080.jpg</file>
+    <file>Icons2/images/2104.png</file>
+    <file>Icons2/images/2135.png</file>
+    <file>Icons2/images/2149.png</file>
+    <file>Icons2/images/automodde1.PNG</file>
+    <file>Icons2/images/automode1.PNG</file>
+    <file>Icons2/images/automode2.PNG</file>
     <file>Icons2/images/Logofyp.png</file>
+    <file>Icons2/images/automodde1.PNG</file>
+    <file>Icons2/images/automode1.PNG</file>
+    <file>Icons2/images/automode2.PNG</file>
+    <file>Icons2/images/Logofyp.png</file>
+  </qresource>
+  <qresource prefix="Gestures">
+    <file>Icons2/10 hand gestures editted/0.png</file>
+    <file>Icons2/10 hand gestures editted/1.png</file>
+    <file>Icons2/10 hand gestures editted/2.png</file>
+    <file>Icons2/10 hand gestures editted/3.png</file>
+    <file>Icons2/10 hand gestures editted/4.png</file>
+    <file>Icons2/10 hand gestures editted/5.0.png</file>
+    <file>Icons2/10 hand gestures editted/5.1.png</file>
+    <file>Icons2/10 hand gestures editted/5.1new.png</file>
+    <file>Icons2/10 hand gestures editted/6.png</file>
+    <file>Icons2/10 hand gestures editted/7.png</file>
+    <file>Icons2/10 hand gestures editted/8.png</file>
   </qresource>
 </RCC>
