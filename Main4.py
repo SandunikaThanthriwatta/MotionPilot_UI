@@ -5,6 +5,7 @@ import sys
 
 from PyQt6.QtCore import Qt, QPoint
 from PyQt6.QtWidgets import QMainWindow, QApplication,QPushButton, QSizeGrip
+from PyQt6.QtGui import QIcon
 
 
 import resources_rc
@@ -25,6 +26,10 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+
+        # Set the window icon
+        self.setWindowIcon(QIcon('SystemTray\logo.png'))
+        
         self.switch_to_homePage()
         self.initialize_ui()
         
