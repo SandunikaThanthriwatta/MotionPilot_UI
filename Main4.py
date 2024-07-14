@@ -258,9 +258,9 @@ class MinimizeWindow(QMainWindow):
         self.main_window = None
         
     
-    #def open_main_window(self):
-     #   self.Main_Window.show()  # Show the main window
-     #   self.hide()
+    # Set the window icon
+        self.setWindowIcon(QIcon('SystemTray\logo.png'))
+
     
     #Code to connect another window
     def open_main_window(self):
