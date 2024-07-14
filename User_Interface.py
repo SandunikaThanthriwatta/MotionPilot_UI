@@ -111,6 +111,7 @@ class Ui_MainWindow(object):
         self.Menu_Middle_Frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.Menu_Middle_Frame.setObjectName("Menu_Middle_Frame")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.Menu_Middle_Frame)
+        self.verticalLayout_5.setContentsMargins(-1, -1, 1, -1)
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.Home_Button = QtWidgets.QPushButton(parent=self.Menu_Middle_Frame)
         self.Home_Button.setMinimumSize(QtCore.QSize(120, 35))
@@ -119,6 +120,11 @@ class Ui_MainWindow(object):
         self.Home_Button.setFont(font)
         self.Home_Button.setStyleSheet("#Home_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
+"    font-weight: bold\n"
+"}\n"
+"\n"
+"#Home_Button:checked{\n"
+"     \n"
 "    font-weight: bold\n"
 "}\n"
 "")
@@ -134,8 +140,12 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.Library_Button.setFont(font)
-        self.Library_Button.setStyleSheet("#Home_Button:hover{\n"
+        self.Library_Button.setStyleSheet("#Library_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
+"    font-weight: bold\n"
+"}\n"
+"#Library_Button:checked{\n"
+"     \n"
 "    font-weight: bold\n"
 "}\n"
 "")
@@ -160,10 +170,10 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.Application_Button.setFont(font)
-        self.Application_Button.setStyleSheet("checked:{background-color: rgb(255, 255, 255);}\n"
-"#Home_Button:hover{\n"
+        self.Application_Button.setStyleSheet("\n"
+"#Application_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
-"    font-weight: bold\n"
+"\n"
 "}\n"
 "\n"
 "")
@@ -181,9 +191,9 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.Gestures_Button.setFont(font)
-        self.Gestures_Button.setStyleSheet("#Home_Button:hover{\n"
+        self.Gestures_Button.setStyleSheet("#Gestures_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
-"    font-weight: bold\n"
+"\n"
 "}\n"
 "")
         icon4 = QtGui.QIcon()
@@ -199,10 +209,16 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.Manual_Button.setFont(font)
-        self.Manual_Button.setStyleSheet("#Home_Button:hover{\n"
+        self.Manual_Button.setStyleSheet("#Manual_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
 "    font-weight: bold\n"
 "}\n"
+"\n"
+"#Manual_Button:checked{\n"
+"     \n"
+"    font-weight: bold\n"
+"}\n"
+"\n"
 "")
         icon5 = QtGui.QIcon()
         icon5.addPixmap(QtGui.QPixmap(":/icons/Icons2/book-open.svg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
@@ -225,9 +241,9 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.AutoMode_Button.setFont(font)
-        self.AutoMode_Button.setStyleSheet("#Home_Button:hover{\n"
+        self.AutoMode_Button.setStyleSheet("#AutoMode_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
-"    font-weight: bold\n"
+"\n"
 "}\n"
 "")
         icon6 = QtGui.QIcon()
@@ -244,9 +260,9 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.ManualMode_Button.setFont(font)
-        self.ManualMode_Button.setStyleSheet("#Home_Button:hover{\n"
+        self.ManualMode_Button.setStyleSheet("#ManualMode_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
-"    font-weight: bold\n"
+"\n"
 "}\n"
 "")
         icon7 = QtGui.QIcon()
@@ -262,8 +278,12 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.Custom_Button.setFont(font)
-        self.Custom_Button.setStyleSheet("#Home_Button:hover{\n"
+        self.Custom_Button.setStyleSheet("#Custom_Button:hover{\n"
 "      border: 1px solid rgb(170, 20, 101);\n"
+"    font-weight: bold\n"
+"}\n"
+"#Custom_Button:checked{\n"
+"     \n"
 "    font-weight: bold\n"
 "}\n"
 "")
@@ -291,6 +311,10 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.Information_Button.setFont(font)
+        self.Information_Button.setStyleSheet("#Information_Button:hover{\n"
+"      border: 1px solid rgb(170, 20, 101);\n"
+"    font-weight: bold\n"
+"}")
         icon9 = QtGui.QIcon()
         icon9.addPixmap(QtGui.QPixmap(":/icons/Icons2/info.svg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.Information_Button.setIcon(icon9)
@@ -304,6 +328,10 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.Settings_Button.setFont(font)
+        self.Settings_Button.setStyleSheet("#Settings_Button:hover{\n"
+"      border: 1px solid rgb(170, 20, 101);\n"
+"    font-weight: bold\n"
+"}")
         icon10 = QtGui.QIcon()
         icon10.addPixmap(QtGui.QPixmap(":/icons/Icons2/settings.svg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.Settings_Button.setIcon(icon10)

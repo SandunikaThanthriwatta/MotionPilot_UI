@@ -156,6 +156,7 @@ class MainWindow(QMainWindow,Ui_MainWindow):
     def switch_to_CustomPage(self):
 
         self.ui.Manual_Button.setChecked(False)
+        self.ui.Manual_Button_Container.setHidden(True)
 
 
     def switch_to_InformationPage(self):
