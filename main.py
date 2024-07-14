@@ -3,7 +3,7 @@
 import os
 import sys
 
-from PyQt6.QtWidgets import QMainWindow, QApplication,QPushButton
+from PyQt6.QtWidgets import QMainWindow, QApplication,QPushButton, QButtonGroup
 
 
 import resources_rc
@@ -43,6 +43,7 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.ui.Home_Button.clicked.connect(self.switch_to_homePage)
         self.ui.Manual_Button.clicked.connect(self.switch_to_ManualPage)
         self.ui.Library_Button.clicked.connect(self.switch_to_LibraryPage)
+        self.ui.Custom_Button.clicked.connect(self.switch_to_CustomPage)
 
         self.ui.Information_Button.clicked.connect(self.switch_to_InformationPage)
         self.ui.Settings_Button.clicked.connect(self.switch_to_SettingsPage)
@@ -72,6 +73,9 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.ui.Dynamic_Button2.setCheckable(True)
         self.ui.Dynamic_Button1.setCheckable(True)
 
+
+
+
         self.ui.Static_Button2.clicked.connect(self.switch_to_StaticGestures)
         self.ui.Static_Button1.clicked.connect(self.switch_to_StaticGestures)
         self.ui.Dynamic_Button2.clicked.connect(self.switch_to_DynamicGestures)
@@ -80,13 +84,18 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.ui.Start_Button.clicked.connect(self.switch_to_Start_Application)
         self.ui.Stop_Button.clicked.connect(self.switch_to_Stop_Application)
 
+        self.button_group = QButtonGroup(self)
+        self.button_group.addButton(self.ui.Information_Button)
+        self.button_group.addButton(self.ui.Settings_Button)
+        self.button_group.setExclusive(True)
+
     def restore_or_maximize_window(self):
         if self.isMaximized():
             self.showNormal()
         else:
             self.showMaximized()
     def initialize_ui(self):
-        self.resize(710, 540)
+        self.resize(800, 540)
         self.setWindowTitle("MotionPilot")
 
     def switch_to_StaticGestures(self):
@@ -99,12 +108,21 @@ class MainWindow(QMainWindow,Ui_MainWindow):
     def Remove_Button_Check(self):
 
         self.ui.More_Menu_Widget.setHidden(True)
+        # Disable auto-exclusive temporarily
+        self.button_group.setExclusive(False)
+
+        # Uncheck the buttons
         self.ui.Information_Button.setChecked(False)
         self.ui.Settings_Button.setChecked(False)
+
+        # Re-enable auto-exclusive
+        self.button_group.setExclusive(True)
+        self.ui.Main_Body_Widget.setFocus()
 
     def More_Menu_Remover(self):
         self.Remove_Button_Check()
         self.initialize_ui()
+
     def switch_to_Start_Application(self):
         self.ui.Start_Stacked_Widget.setCurrentIndex(1)
 
@@ -117,6 +135,7 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.ui.Manual_Button_Container.setHidden(True)
         self.ui.Library_Button_Container.setHidden(True)
         self.ui.Manual_Button.setChecked(False)
+        self.ui.Custom_Button.setChecked(False)
 
     def switch_to_LibraryPage(self):
         self.ui.Main_Body_Page_Stack.setCurrentIndex(2)
@@ -125,12 +144,19 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.ui.Gestures_Button.setChecked(False)
         self.ui.Application_Button.setChecked(True)
         self.ui.Manual_Button.setChecked(False)
+        self.ui.Custom_Button.setChecked(False)
 
     def switch_to_ManualPage(self):
         self.ui.Main_Body_Page_Stack.setCurrentIndex(1)
         self.ui.Manual_Stacked_Widget.setCurrentIndex(1)
         self.ui.ManualMode_Button.setChecked(False)
         self.ui.AutoMode_Button.setChecked(True)
+        self.ui.Custom_Button.setChecked(False)
+
+    def switch_to_CustomPage(self):
+
+        self.ui.Manual_Button.setChecked(False)
+
 
     def switch_to_InformationPage(self):
         self.ui.More_Menu_Stacked_Widget.setCurrentIndex(0)
