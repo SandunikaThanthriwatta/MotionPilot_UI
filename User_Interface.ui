@@ -182,6 +182,9 @@ background-color:#343B48;</string>
             <enum>QFrame::Raised</enum>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
             <item>
              <widget class="QPushButton" name="Home_Button">
               <property name="minimumSize">
@@ -198,6 +201,11 @@ background-color:#343B48;</string>
               <property name="styleSheet">
                <string notr="true">#Home_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
+	font-weight: bold
+}
+
+#Home_Button:checked{
+	 
 	font-weight: bold
 }
 </string>
@@ -231,8 +239,12 @@ background-color:#343B48;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">#Home_Button:hover{
+               <string notr="true">#Library_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
+	font-weight: bold
+}
+#Library_Button:checked{
+	 
 	font-weight: bold
 }
 </string>
@@ -296,10 +308,10 @@ background-color:#343B48;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">checked:{background-color: rgb(255, 255, 255);}
-#Home_Button:hover{
+                  <string notr="true">
+#Application_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
-	font-weight: bold
+
 }
 
 </string>
@@ -339,9 +351,9 @@ background-color:#343B48;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">#Home_Button:hover{
+                  <string notr="true">#Gestures_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
-	font-weight: bold
+
 }
 </string>
                  </property>
@@ -377,10 +389,16 @@ background-color:#343B48;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">#Home_Button:hover{
+               <string notr="true">#Manual_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
 	font-weight: bold
 }
+
+#Manual_Button:checked{
+	 
+	font-weight: bold
+}
+
 </string>
               </property>
               <property name="text">
@@ -442,9 +460,9 @@ background-color:#343B48;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">#Home_Button:hover{
+                  <string notr="true">#AutoMode_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
-	font-weight: bold
+
 }
 </string>
                  </property>
@@ -483,9 +501,9 @@ background-color:#343B48;</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">#Home_Button:hover{
+                  <string notr="true">#ManualMode_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
-	font-weight: bold
+
 }
 </string>
                  </property>
@@ -521,8 +539,12 @@ background-color:#343B48;</string>
                </font>
               </property>
               <property name="styleSheet">
-               <string notr="true">#Home_Button:hover{
+               <string notr="true">#Custom_Button:hover{
 	  border: 1px solid rgb(170, 20, 101);
+	font-weight: bold
+}
+#Custom_Button:checked{
+	 
 	font-weight: bold
 }
 </string>
@@ -605,6 +627,12 @@ background-color:#343B48;</string>
                 <pointsize>10</pointsize>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">#Information_Button:hover{
+	  border: 1px solid rgb(170, 20, 101);
+	font-weight: bold
+}</string>
+              </property>
               <property name="text">
                <string>Information</string>
               </property>
@@ -635,6 +663,12 @@ background-color:#343B48;</string>
                <font>
                 <pointsize>10</pointsize>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#Settings_Button:hover{
+	  border: 1px solid rgb(170, 20, 101);
+	font-weight: bold
+}</string>
               </property>
               <property name="text">
                <string>Settings</string>
@@ -8431,9 +8465,6 @@ border: 1px solid #568AF2;
         <width>10</width>
         <height>16777215</height>
        </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>

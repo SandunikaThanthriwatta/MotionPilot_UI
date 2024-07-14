@@ -153,6 +153,7 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.ui.Manual_Button_Container.setHidden(True)
         self.ui.Library_Button_Container.setHidden(True)
         self.ui.Manual_Button.setChecked(False)
+        self.ui.Custom_Button.setChecked(False)
 
     def switch_to_LibraryPage(self):
         self.ui.Main_Body_Page_Stack.setCurrentIndex(2)
@@ -173,6 +174,9 @@ class MainWindow(QMainWindow,Ui_MainWindow):
     def switch_to_CustomPage(self):
 
         self.ui.Manual_Button.setChecked(False)
+        self.ui.Manual_Button_Container.setHidden(True)
+        self.ui.Manual_Button.setChecked(False)
+        self.ui.Library_Button_Container.setHidden(True)
 
     def switch_to_InformationPage(self):
         self.ui.More_Menu_Stacked_Widget.setCurrentIndex(0)
