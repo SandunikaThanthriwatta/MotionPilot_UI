@@ -289,6 +289,13 @@
     <file>Icons2/zoom-out.svg</file>
   </qresource>
   <qresource prefix="images">
+    <file>Icons2/images/all.png</file>
+    <file>Icons2/images/down.png</file>
+    <file>Icons2/images/horizontal.png</file>
+    <file>Icons2/images/left.png</file>
+    <file>Icons2/images/right.png</file>
+    <file>Icons2/images/up.png</file>
+    <file>Icons2/images/vertical.png</file>
     <file>Icons2/images/Windows-Logo-noback.png</file>
     <file>Icons2/10 hand gestures editted/9.png</file>
     <file>Icons2/images/vlcnoback2.png</file>
@@ -319,7 +326,45 @@
     <file>Icons2/images/automode2.PNG</file>
     <file>Icons2/images/Logofyp.png</file>
   </qresource>
+  <qresource prefix="videos">
+    <file>Icons2/images/videos/skin segmentaton.mp4</file>
+  </qresource>
   <qresource prefix="Gestures">
+    <file>Icons2/Dynamic hand gestures/0_10-11-12-13.png</file>
+    <file>Icons2/Dynamic hand gestures/2_18-19-20-21.png</file>
+    <file>Icons2/Dynamic hand gestures/2_18-19.png</file>
+    <file>Icons2/Dynamic hand gestures/2_20-21.png</file>
+    <file>Icons2/Dynamic hand gestures/3_22.png</file>
+    <file>Icons2/Dynamic hand gestures/3_22-23.png</file>
+    <file>Icons2/Dynamic hand gestures/3_22-23-24-25.png</file>
+    <file>Icons2/Dynamic hand gestures/3_23.png</file>
+    <file>Icons2/Dynamic hand gestures/3_24-25.png</file>
+    <file>Icons2/Dynamic hand gestures/4_26-27-28-29.png</file>
+    <file>Icons2/Dynamic hand gestures/4_28.png</file>
+    <file>Icons2/Dynamic hand gestures/4_28-29.png</file>
+    <file>Icons2/Dynamic hand gestures/4_29.png</file>
+    <file>Icons2/Dynamic hand gestures/5_30-31.png</file>
+    <file>Icons2/Dynamic hand gestures/5_30-31-32-33.png</file>
+    <file>Icons2/Dynamic hand gestures/5_32-33.png</file>
+    <file>Icons2/Dynamic hand gestures/6_34-35-36-37.png</file>
+    <file>Icons2/Dynamic hand gestures/7_38-39-40-41.png</file>
+    <file>Icons2/Dynamic hand gestures/8_42-43-44-45.png</file>
+    <file>Icons2/Dynamic hand gestures/2_18-19.png</file>
+    <file>Icons2/Dynamic hand gestures/2_20-21.png</file>
+    <file>Icons2/Dynamic hand gestures/3_22.png</file>
+    <file>Icons2/Dynamic hand gestures/3_22-23.png</file>
+    <file>Icons2/Dynamic hand gestures/3_22-23-24-25.png</file>
+    <file>Icons2/Dynamic hand gestures/3_23.png</file>
+    <file>Icons2/Dynamic hand gestures/3_24-25.png</file>
+    <file>Icons2/Dynamic hand gestures/4_26-27-28-29.png</file>
+    <file>Icons2/Dynamic hand gestures/4_28.png</file>
+    <file>Icons2/Dynamic hand gestures/4_28-29.png</file>
+    <file>Icons2/Dynamic hand gestures/4_29.png</file>
+    <file>Icons2/Dynamic hand gestures/5_30-31.png</file>
+    <file>Icons2/Dynamic hand gestures/5_30-31-32-33.png</file>
+    <file>Icons2/Dynamic hand gestures/5_32-33.png</file>
+    <file>Icons2/Dynamic hand gestures/7_38-39-40-41.png</file>
+    <file>Icons2/Dynamic hand gestures/8_42-43-44-45.png</file>
     <file>Icons2/10 hand gestures editted/0.png</file>
     <file>Icons2/10 hand gestures editted/1.png</file>
     <file>Icons2/10 hand gestures editted/2.png</file>
@@ -332,4 +377,5 @@
     <file>Icons2/10 hand gestures editted/7.png</file>
     <file>Icons2/10 hand gestures editted/8.png</file>
   </qresource>
+  <qresource prefix="newPrefix"/>
 </RCC>
