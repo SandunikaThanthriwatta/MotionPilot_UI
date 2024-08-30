@@ -133,6 +133,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         QSizeGrip(self.ui.frame_4)
 
+        self.ui.Select_HotKey1_ComboBox.setPlaceholderText("Enter Key 1")
+        self.ui.Select_HotKey2_ComboBox.setPlaceholderText("Enter Key 2")
+        self.ui.Select_HotKey3_ComboBox.setPlaceholderText("Enter Key 3")
+
+        self.ui.Select_Key_ComboBox.setPlaceholderText("Enter Key")
+
+        self.ui.Application_Name_Text.setPlaceholderText("Enter Application Name")
+
     def on_combo_box_changed(self, index):
         if index == 0:
             self.ui.Action_Types_Stacked_Widget.setCurrentIndex(0)
