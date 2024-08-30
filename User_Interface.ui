@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>946</width>
+    <width>976</width>
     <height>540</height>
    </rect>
   </property>
@@ -588,6 +588,9 @@ background-color:#343B48;</string>
               </property>
               <property name="checkable">
                <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
               </property>
               <property name="autoExclusive">
                <bool>true</bool>
@@ -1267,7 +1270,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <string notr="true">background-color:#2C313C;</string>
            </property>
            <property name="currentIndex">
-            <number>1</number>
+            <number>2</number>
            </property>
            <widget class="QWidget" name="Home_Page">
             <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -2085,7 +2088,7 @@ border: rgb(255, 255, 255);</string>
                 <string notr="true"/>
                </property>
                <property name="currentIndex">
-                <number>1</number>
+                <number>2</number>
                </property>
                <widget class="QWidget" name="Manual_Mode_Page">
                 <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -2372,7 +2375,7 @@ border: 1px solid #568AF2; }</string>
                  <property name="styleSheet">
                   <string notr="true">#Auto_Mode_Bottom_Widget{}</string>
                  </property>
-                 <widget class="QWidget" name="">
+                 <widget class="QWidget" name="layoutWidget">
                   <property name="geometry">
                    <rect>
                     <x>1</x>
@@ -2618,7 +2621,7 @@ font-weight: bold;
                           </item>
                          </layout>
                         </widget>
-                        <widget class="QWidget" name="">
+                        <widget class="QWidget" name="layoutWidget">
                          <property name="geometry">
                           <rect>
                            <x>10</x>
@@ -3820,7 +3823,7 @@ Both the Auto Mode and Manual Mode are available for Static and Dynamic
                       <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
-                    <widget class="QWidget" name="">
+                    <widget class="QWidget" name="layoutWidget">
                      <property name="geometry">
                       <rect>
                        <x>50</x>
@@ -3949,7 +3952,7 @@ Both the Auto Mode and Manual Mode are available for Static and Dynamic
                       </item>
                      </layout>
                     </widget>
-                    <widget class="QWidget" name="">
+                    <widget class="QWidget" name="layoutWidget">
                      <property name="geometry">
                       <rect>
                        <x>0</x>
@@ -4412,7 +4415,7 @@ Gesture</string>
                       <x>0</x>
                       <y>10</y>
                       <width>216</width>
-                      <height>52</height>
+                      <height>60</height>
                      </rect>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_17">
@@ -4737,6 +4740,1557 @@ border-radius: 10px; </string>
               </widget>
              </item>
             </layout>
+           </widget>
+           <widget class="QWidget" name="Custom_Page">
+            <widget class="QStackedWidget" name="Custom_Stacked_Widget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>9</y>
+               <width>511</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="page_11">
+              <widget class="QWidget" name="widget_3" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>9</x>
+                 <y>19</y>
+                 <width>481</width>
+                 <height>401</height>
+                </rect>
+               </property>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>-7</y>
+                  <width>481</width>
+                  <height>411</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QFrame" name="frame_54">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <widget class="QLabel" name="label_90">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>10</y>
+                      <width>481</width>
+                      <height>20</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color:rgb(190, 50, 125);</string>
+                    </property>
+                    <property name="text">
+                     <string>Add Custom Actions</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_55">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>80</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <widget class="QFrame" name="Application_Name_Frame">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>470</width>
+                      <height>80</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>465</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>80</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">#Application_Name_Frame
+{border: 1px solid #568AF2;
+    border-radius: 8px; }</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QLabel" name="label_91">
+                     <property name="geometry">
+                      <rect>
+                       <x>30</x>
+                       <y>30</y>
+                       <width>191</width>
+                       <height>20</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>Application Name :</string>
+                     </property>
+                    </widget>
+                    <widget class="QLineEdit" name="lineEdit_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>250</x>
+                       <y>20</y>
+                       <width>191</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#lineEdit_3{background-color:#434A58;
+	border-color: rgb(255, 255, 255);
+border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+padding-left:10px;
+}
+
+#lineEdit_3:hover{
+border:1px solid #E5D9D9;
+border-opacity:0.7
+}
+
+#lineEdit_3:checked{
+border:1px solid #E5D9D9;
+border-opacity:0.9;
+background-color:#343B48;
+}</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="Gesture_Frame">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <widget class="QFrame" name="Gesture_Frame2">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>470</width>
+                      <height>271</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>465</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">#Gesture_Frame2
+{border: 1px solid #568AF2;
+    border-radius: 8px; }</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QWidget" name="layoutWidget_17">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>50</y>
+                       <width>441</width>
+                       <height>211</height>
+                      </rect>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_20">
+                      <property name="verticalSpacing">
+                       <number>15</number>
+                      </property>
+                      <item row="4" column="1">
+                       <widget class="QPushButton" name="Three_Fingers_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#Three_Fingers_Button{
+	
+padding:3px;
+}
+
+#Three_Fingers_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/8.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/8.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="0">
+                       <widget class="QPushButton" name="C_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#C_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture C</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="2">
+                       <widget class="QPushButton" name="Swag_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#Swag_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture Swag</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QPushButton" name="C_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#C_Button{
+	
+padding:3px;
+}
+
+#C_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/7.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/7.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QPushButton" name="V_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#V_Button{
+	
+padding:3px;
+}
+
+#V_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/4.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/4.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QPushButton" name="Rock_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#Rock_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture Rock</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="2">
+                       <widget class="QPushButton" name="Scissors_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#Scissors_Button_2{
+	
+
+}
+
+#Scissors_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture Scissors</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="2">
+                       <widget class="QPushButton" name="Swag_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#Swag_Button{
+	
+padding:3px;
+}
+
+#Swag_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/6.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/6.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QPushButton" name="L_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#L_Button{
+	
+padding:3px;
+}
+
+#L_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/5.0.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/5.0.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <widget class="QPushButton" name="Three_Fingers_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#Three_Fingers_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture Three Fingers</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="2">
+                       <widget class="QPushButton" name="Thumbs_Left_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#Thumbs_Left_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture Thumbs Left</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QPushButton" name="Rock_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#Rock_Button{
+	
+padding:3px;
+}
+
+#Rock_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/2.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/2.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="2">
+                       <widget class="QPushButton" name="Thumbs_Left_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#Thumbs_Left_Button{
+	
+padding:3px;
+}
+
+#Thumbs_Left_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/3.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/3.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="2">
+                       <widget class="QPushButton" name="Scissors_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#Scissors_Button{
+	
+padding:3px;
+}
+
+#Scissors_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/images/Icons2/10 hand gestures editted/9.png</normaloff>:/images/Icons2/10 hand gestures editted/9.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QPushButton" name="Palm_Button">
+                        <property name="styleSheet">
+                         <string notr="true">#Palm_Button{
+	
+padding:3px;
+}
+
+#Palm_Button:hover {
+
+	  border: 1px solid rgb(170, 20, 101);
+    border-radius: 8px;
+border-opacity:0.7;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="Resources.qrc">
+                          <normaloff>:/Gestures/Icons2/10 hand gestures editted/0.png</normaloff>:/Gestures/Icons2/10 hand gestures editted/0.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>30</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QPushButton" name="L_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#L_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture L</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QPushButton" name="V_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#V_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture V</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QPushButton" name="Palm_Button_2">
+                        <property name="styleSheet">
+                         <string notr="true">#Palm_Button_2:hover {
+
+	 color:#568AF2;
+text-decoration:underline;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Gesture Palm</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QLabel" name="label_92">
+                     <property name="geometry">
+                      <rect>
+                       <x>30</x>
+                       <y>10</y>
+                       <width>191</width>
+                       <height>20</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>Select gesture :</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_12">
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QWidget" name="Select_Keys_Frame" native="true">
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <widget class="QFrame" name="frame_56">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>20</y>
+                    <width>411</width>
+                    <height>41</height>
+                   </rect>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <widget class="QLabel" name="label_97">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>-10</y>
+                     <width>431</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>16</pointsize>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color:rgb(190, 50, 125);</string>
+                   </property>
+                   <property name="text">
+                    <string>Add Custom Actions</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="Back_Button_Custom">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>0</y>
+                     <width>31</width>
+                     <height>24</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="Resources.qrc">
+                     <normaloff>:/icons/Icons2/arrow-left-circle.svg</normaloff>:/icons/Icons2/arrow-left-circle.svg</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QFrame" name="Select_Type_Frame">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>100</y>
+                    <width>411</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#Select_Type_Frame
+{border: 1px solid #568AF2;
+    border-radius: 8px; }</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <widget class="QComboBox" name="Action_Type_ComboBox">
+                   <property name="geometry">
+                    <rect>
+                     <x>270</x>
+                     <y>20</y>
+                     <width>121</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#Action_Type_ComboBox{background-color:#434A58;
+	border-color: rgb(255, 255, 255);
+border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+padding-left:10px}
+
+#Action_Type_ComboBox:hover{
+border:1px solid #E5D9D9;
+border-opacity:0.5}</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Press</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>HotKey</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Scroll</string>
+                    </property>
+                   </item>
+                  </widget>
+                  <widget class="QLabel" name="label_93">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>30</y>
+                     <width>191</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Select action type :</string>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QFrame" name="Select_keys_Frame">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>190</y>
+                    <width>411</width>
+                    <height>111</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#Select_keys_Frame
+{border: 1px solid #568AF2;
+    border-radius: 8px; }</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <widget class="QStackedWidget" name="Action_Types_Stacked_Widget">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>10</y>
+                     <width>381</width>
+                     <height>91</height>
+                    </rect>
+                   </property>
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="page_13">
+                    <widget class="QLabel" name="label_98">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>25</y>
+                       <width>191</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>Select key to press :</string>
+                     </property>
+                    </widget>
+                    <widget class="QComboBox" name="Select_Key_ComboBox">
+                     <property name="geometry">
+                      <rect>
+                       <x>260</x>
+                       <y>20</y>
+                       <width>121</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#Select_Key_ComboBox{background-color:#434A58;
+	border-color: rgb(255, 255, 255);
+border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+padding-left:10px}
+
+#Select_Key_ComboBox:hover{
+border:1px solid #E5D9D9;
+border-opacity:0.5}</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>A</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>B</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>C</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>D</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>E</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>F</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>G</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>H</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>I</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>J</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>K</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>L</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>M</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>N</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>O</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>P</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Q</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>R</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>S</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>T</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>U</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>V</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>W</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>X</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Y</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Z</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </widget>
+                   <widget class="QWidget" name="page_14">
+                    <widget class="QLabel" name="label_95">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>10</y>
+                       <width>141</width>
+                       <height>20</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>Select keys for Hot Key :</string>
+                     </property>
+                    </widget>
+                    <widget class="QWidget" name="layoutWidget">
+                     <property name="geometry">
+                      <rect>
+                       <x>51</x>
+                       <y>35</y>
+                       <width>301</width>
+                       <height>51</height>
+                      </rect>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_5">
+                      <property name="spacing">
+                       <number>20</number>
+                      </property>
+                      <item>
+                       <widget class="QComboBox" name="Select_HotKey1_ComboBox">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">#Select_HotKey1_ComboBox{background-color:#434A58;
+	border-color: rgb(255, 255, 255);
+border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+padding-left:10px}
+
+#Select_HotKey1_ComboBox:hover{
+border:1px solid #E5D9D9;
+border-opacity:0.5}</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>A</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>B</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>C</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>E</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>F</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>G</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>H</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>I</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>J</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>K</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>L</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>M</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>N</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>O</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>P</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Q</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>R</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>S</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>T</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>U</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>W</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>X</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Y</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Z</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="Select_HotKey2_ComboBox">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">#Select_HotKey2_ComboBox{background-color:#434A58;
+	border-color: rgb(255, 255, 255);
+border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+padding-left:10px}
+
+#Select_HotKey2_ComboBox:hover{
+border:1px solid #E5D9D9;
+border-opacity:0.5}</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>A</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>B</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>C</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>E</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>F</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>G</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>H</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>I</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>J</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>K</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>L</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>M</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>N</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>O</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>P</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Q</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>R</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>S</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>T</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>U</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>W</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>X</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Y</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Z</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="Select_HotKey3_ComboBox">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">#Select_HotKey3_ComboBox{background-color:#434A58;
+	border-color: rgb(255, 255, 255);
+border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+padding-left:10px}
+
+#Select_HotKey3_ComboBox:hover{
+border:1px solid #E5D9D9;
+border-opacity:0.5}</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>A</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>B</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>C</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>D</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>E</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>F</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>G</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>H</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>I</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>J</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>K</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>L</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>M</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>N</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>O</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>P</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Q</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>R</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>S</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>T</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>U</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>V</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>W</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>X</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Y</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Z</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                   <widget class="QWidget" name="page_15">
+                    <widget class="QComboBox" name="Select_Scroll_Type_ComboBox">
+                     <property name="geometry">
+                      <rect>
+                       <x>260</x>
+                       <y>20</y>
+                       <width>121</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">#Select_Scroll_Type_ComboBox{background-color:#434A58;
+	border-color: rgb(255, 255, 255);
+border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+padding-left:10px}
+
+#Select_Scroll_Type_ComboBox:hover{
+border:1px solid #E5D9D9;
+border-opacity:0.5}</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>Up</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Down</string>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QLabel" name="label_96">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>25</y>
+                       <width>191</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>Select scroll type :</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
            </widget>
            <widget class="QWidget" name="Gesture_Library_Page">
             <widget class="QStackedWidget" name="Library_Stacked_Widget">
@@ -5411,7 +6965,7 @@ border: 1px solid #568AF2;
                    </rect>
                   </property>
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>0</number>
                   </property>
                   <widget class="QWidget" name="Dynamic_Page1">
                    <widget class="QFrame" name="frame_43">
@@ -5831,7 +7385,7 @@ Left- Vertical</string>
                       </item>
                      </layout>
                     </widget>
-                    <widget class="QPushButton" name="pushButton_3">
+                    <widget class="QPushButton" name="Next_Button">
                      <property name="geometry">
                       <rect>
                        <x>451</x>
@@ -5875,7 +7429,7 @@ Left- Vertical</string>
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <widget class="QPushButton" name="pushButton_2">
+                    <widget class="QPushButton" name="Previous_Button">
                      <property name="geometry">
                       <rect>
                        <x>0</x>
@@ -6366,7 +7920,7 @@ background-color:#3A3E47;
                 <string notr="true"/>
                </property>
                <property name="currentIndex">
-                <number>6</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="Supporing_Applications_Page">
                 <property name="styleSheet">
@@ -10857,6 +12411,55 @@ border: 1px solid #568AF2;
              </widget>
             </widget>
            </widget>
+           <widget class="QWidget" name="page_5">
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <widget class="QWidget" name="widget" native="true">
+               <property name="styleSheet">
+                <string notr="true">border: 1px solid #568AF2;
+    border-radius: 8px; </string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <widget class="QFrame" name="frame_50">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_51">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_52">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_4"/>
           </widget>
          </item>
         </layout>
@@ -10864,7 +12467,7 @@ border: 1px solid #568AF2;
       </item>
      </layout>
     </item>
-    <item alignment="Qt::AlignBottom">
+    <item>
      <widget class="QFrame" name="frame_4">
       <property name="minimumSize">
        <size>

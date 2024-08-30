@@ -40,6 +40,34 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.ui.Settings_Button.clicked.connect(self.show_center_menu)
         self.ui.More_Menu_close_Button.clicked.connect(self.More_Menu_Remover)
 
+        Custom_Page_Buttons = [
+            self.ui.Palm_Button,
+            self.ui.Palm_Button_2,
+            self.ui.Rock_Button,
+            self.ui.Rock_Button_2,
+            self.ui.Thumbs_Left_Button,
+            self.ui.Thumbs_Left_Button_2,
+            self.ui.V_Button,
+            self.ui.V_Button_2,
+            self.ui.L_Button,
+            self.ui.L_Button_2,
+            self.ui.Swag_Button,
+            self.ui.Swag_Button_2,
+            self.ui.C_Button,
+            self.ui.C_Button_2,
+            self.ui.Three_Fingers_Button,
+            self.ui.Three_Fingers_Button_2,
+            self.ui.Scissors_Button,
+            self.ui.Scissors_Button_2
+
+        ]
+
+        for button in Custom_Page_Buttons:
+            button.clicked.connect(self.switch_to_addCustomActionTypePage)
+
+        self.ui.Back_Button_Custom.clicked.connect(self.switch_to_CustomPage)
+        self.ui.Action_Type_ComboBox.currentIndexChanged.connect(self.on_combo_box_changed)
+
         self.ui.Home_Button.clicked.connect(self.switch_to_homePage)
         self.ui.Manual_Button.clicked.connect(self.switch_to_ManualPage)
         self.ui.Library_Button.clicked.connect(self.switch_to_LibraryPage)
@@ -67,10 +95,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.ui.BackButton5.clicked.connect(self.switch_to_ApplicationsPage)
         self.ui.BackButton7.clicked.connect(self.switch_to_ApplicationsPage)
 
+        self.ui.Previous_Button.clicked.connect(self.switch_to_DynamicGestures)
+        self.ui.Next_Button.clicked.connect(self.switch_to_DynamicGesturePage2)
+
         self.ui.Static_Button2.setCheckable(True)
         self.ui.Static_Button1.setCheckable(True)
         self.ui.Dynamic_Button2.setCheckable(True)
         self.ui.Dynamic_Button1.setCheckable(True)
+        self.ui.Custom_Button.setCheckable(True)
+
+
 
         self.ui.Static_Button2.clicked.connect(self.switch_to_StaticGestures)
         self.ui.Static_Button1.clicked.connect(self.switch_to_StaticGestures)
@@ -99,6 +133,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         QSizeGrip(self.ui.frame_4)
 
+    def on_combo_box_changed(self, index):
+        if index == 0:
+            self.ui.Action_Types_Stacked_Widget.setCurrentIndex(0)
+        elif index == 1:
+            self.ui.Action_Types_Stacked_Widget.setCurrentIndex(1)
+        elif index == 2:
+            self.ui.Action_Types_Stacked_Widget.setCurrentIndex(2)
 
     def restore_or_maximize_window(self):
         if self.isMaximized():
@@ -116,6 +157,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def switch_to_DynamicGestures(self):
         self.ui.Static_Dynamic_Gesture__Stacked_Widget.setCurrentIndex(1)
+        self.ui.Dynamic_Gestures_Stacked_Widget.setCurrentIndex(0)
+        self.ui.Dynamic_Button2.setChecked(True)
+
+    def switch_to_DynamicGesturePage2(self):
+        self.ui.Static_Dynamic_Gesture__Stacked_Widget.setCurrentIndex(1)
+        self.ui.Dynamic_Gestures_Stacked_Widget.setCurrentIndex(1)
         self.ui.Dynamic_Button2.setChecked(True)
     def switch_to_StaticMode(self):
         self.ui.Gesture_Modes_Stacked_Widget.setCurrentIndex(0)
@@ -159,8 +206,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.ui.Manual_Button.setChecked(False)
         self.ui.Custom_Button.setChecked(False)
 
-    def switch_to_LibraryPage(self):
+    def switch_to_CustomPage(self):
         self.ui.Main_Body_Page_Stack.setCurrentIndex(2)
+        self.ui.Custom_Stacked_Widget.setCurrentIndex(0)
+        self.ui.Manual_Button_Container.setHidden(True)
+        self.ui.Library_Button_Container.setHidden(True)
+        self.ui.Manual_Button.setChecked(False)
+        self.ui.Custom_Button.setChecked(True)
+        self.ui.Gestures_Button.setChecked(False)
+        self.ui.Application_Button.setChecked(False)
+
+
+    def switch_to_LibraryPage(self):
+        self.ui.Main_Body_Page_Stack.setCurrentIndex(3)
         self.ui.Library_Stacked_Widget.setCurrentIndex(1)
         self.ui.Applications_Stacked_Widget.setCurrentIndex(0)
         self.ui.Gestures_Button.setChecked(False)
@@ -177,11 +235,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.ui.Auto_Mode_Static_Dynamic_Stacked_Widget.setCurrentIndex(0)
         self.ui.Static_Button4.setChecked(True)
 
-    def switch_to_CustomPage(self):
-        self.ui.Manual_Button.setChecked(False)
-        self.ui.Manual_Button_Container.setHidden(True)
-        self.ui.Manual_Button.setChecked(False)
-        self.ui.Library_Button_Container.setHidden(True)
+    def switch_to_addCustomActionTypePage(self):
+        self.ui.Main_Body_Page_Stack.setCurrentIndex(2)
+        self.ui.Custom_Stacked_Widget.setCurrentIndex(1)
+        self.ui.Action_Types_Stacked_Widget.setCurrentIndex(0)
+        self.ui.Action_Type_ComboBox .setCurrentIndex(0)
+
 
     def switch_to_InformationPage(self):
         self.ui.More_Menu_Stacked_Widget.setCurrentIndex(0)
